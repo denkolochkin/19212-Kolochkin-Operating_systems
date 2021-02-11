@@ -3,8 +3,6 @@
 #include <time.h>
 #include <stdlib.h>
 
-extern char *tzname[];
-
 main() {
     time_t now;
     struct tm *sp;
