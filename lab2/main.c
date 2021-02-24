@@ -8,7 +8,7 @@ extern char *tzname[];
 main() {
     time_t now;
     struct tm *sp;
-    if (setenv ("TZ", "America/Los_Angeles", 1)) {
+    if (!setenv ("TZ", "America/Los_Angeles", 1)) {
         exit(0);
     }
     (void) time(&now);
